@@ -1,0 +1,17 @@
+{
+  "functions": {
+    "api/captcha.py": {
+      "runtime": "python3.9"
+    }
+  },
+  "routes": [
+    {
+      "src": "/captcha",
+      "dest": "/api/captcha"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/captcha"
+    }
+  ]
+}
